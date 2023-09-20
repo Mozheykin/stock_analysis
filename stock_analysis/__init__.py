@@ -85,6 +85,7 @@ class TA():
                 else:
                     info = yf.Ticker(symbol)
                 if rec in TA.RECOMMENDATIONS and rec != last_rec:
+                    TA.last[symbol] = {'rec': rec, 'info': info}
                     yield {symbol: {'rec': rec, 'info': info}}
          
         
