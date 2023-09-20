@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "stock-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Mozheykin <mozheykin.igor@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tradingview-ta = "^3.3.0"
+yfinance = "^0.2.28"
+pytickersymbols = "^1.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
